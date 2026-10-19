@@ -8,7 +8,7 @@ const businessConfig = {
   whatsapp: env.VITE_WHATSAPP_NUMBER || "", // international format, e.g. +15551234567
   email: env.VITE_BUSINESS_EMAIL || "",
   address: env.VITE_BUSINESS_ADDRESS || "", // PLACEHOLDER: office address not provided
-  currency: env.VITE_CURRENCY || "USD",
+  currency: "PKR",
   description:
     "PLACEHOLDER: Replace this with the business description supplied by the owner. Describe who you help, the areas you cover and how you work with buyers, sellers and tenants.",
   mission: "PLACEHOLDER: Add the company's mission statement here.",
