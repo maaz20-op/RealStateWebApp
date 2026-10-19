@@ -3,7 +3,7 @@ const env = import.meta.env;
 // Everything here is a placeholder until the business owner supplies real details.
 // Set values in .env (see .env.example) or edit this file.
 const businessConfig = {
-  name: env.VITE_BUSINESS_NAME || "Us Real State",
+  name: "Us Real State",
   phone: env.VITE_BUSINESS_PHONE || "",
   whatsapp: env.VITE_WHATSAPP_NUMBER || "", // international format, e.g. +15551234567
   email: env.VITE_BUSINESS_EMAIL || "",
