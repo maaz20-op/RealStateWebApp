@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 246 247 245; --surface: 255 255 255; --ink: 20 32 31; --muted: 94 107 105;
+  --line: 222 227 224; --accent: 31 92 77; --accent-ink: 255 255 255;
+}
+.dark {
+  --bg: 15 21 20; --surface: 22 31 30; --ink: 233 238 236; --muted: 148 163 160;
+  --line: 42 56 54; --accent: 95 194 165; --accent-ink: 10 20 18;
+}
+@layer base {
+  body { @apply bg-bg text-ink font-sans antialiased; }
+  h1, h2, h3 { @apply font-display tracking-tight; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-accent; outline-style: solid; }
+}
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-16 sm:py-24; }
+  .input { @apply w-full rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink placeholder:text-muted focus:border-accent; }
+  .label { @apply mb-1.5 block text-sm font-semibold; }
+  .field-error { @apply mt-1 text-xs text-red-600 dark:text-red-400; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
